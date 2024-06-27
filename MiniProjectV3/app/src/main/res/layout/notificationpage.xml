@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Toggle"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Profile Page"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_image_24" />
+            <Button
+                android:id="@+id/buttonChooseImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Choose Image"/>
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/buttonChooseImage"
+                android:hint="Name"
+                android:padding="16sp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextName"
+                android:layout_marginTop="15dp"
+                android:hint="Age"
+                android:padding="16sp"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextAge"
+                android:layout_marginTop="15dp"
+                android:hint="Address"
+                android:padding="16sp"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextAddress"
+                android:layout_marginTop="15dp"
+                android:hint="Phone"
+                android:padding="16sp"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editTextCaretakerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextPhone"
+                android:layout_marginTop="15dp"
+                android:hint="Caretaker Name"
+                android:padding="16sp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCaretakerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCaretakerName"
+                android:layout_marginTop="15dp"
+                android:hint="Caretaker Phone"
+                android:padding="16sp"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editTextRelativeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCaretakerPhone"
+                android:layout_marginTop="15dp"
+                android:hint="Relative Name"
+                android:padding="16sp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextRelativePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextRelativeName"
+                android:layout_marginTop="15dp"
+                android:hint="Relative Phone"
+                android:padding="16sp"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextRelativePhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Save" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

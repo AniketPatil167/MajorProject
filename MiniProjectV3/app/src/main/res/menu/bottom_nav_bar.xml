@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_activity"
+        android:icon="@drawable/activity_log"
+        android:title="Activity"/>
+
+    <item android:id="@+id/nav_todo"
+        android:icon="@drawable/todo_section"
+        android:title="Todo List"/>
+
+    <item android:id="@+id/nav_med"
+        android:icon="@drawable/medicine_section"
+        android:title="Medicine" />
+
+    <item android:id="@+id/nav_voice"
+        android:icon="@drawable/mic"
+        android:title="Chat"/>
+</menu>
